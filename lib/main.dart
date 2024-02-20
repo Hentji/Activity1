@@ -23,14 +23,15 @@ class MyApp extends StatelessWidget {
                 children: [
                   ClipOval(
                     child: Container(
-                      width: 200,
-                      height: 200,
+                      width: 150,
+                      height: 150,
                       color: Colors.white,
                       child: Image.asset(
-                        'images/myImage.png',
+                        'images/myImage.png', // Replace 'your_image.png' with your actual image asset path
                         width: 180,
                         height: 180,
-                        fit: BoxFit.cover,
+                        fit: BoxFit
+                            .cover, // Adjust how the image fits into the circular container
                       ),
                     ),
                   ),
@@ -43,103 +44,123 @@ class MyApp extends StatelessWidget {
                     'Secrettt',
                     style: TextStyle(color: Colors.white, fontSize: 20),
                   ),
-                  const SizedBox(height: 50),
-                  // Add Padding with space between rows
-                  const Padding(
-                    padding: EdgeInsets.symmetric(vertical: 10),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: [
-                        SizedBox(width: 20),
-                        Icon(
-                          Icons.person,
-                          color: Colors.yellow,
-                          size: 30,
-                        ),
-                        SizedBox(width: 10),
-                        Text(
-                          'UserDetails',
-                          style: TextStyle(color: Colors.white, fontSize: 25),
-                        ),
-                      ],
-                    ),
+                  const SizedBox(height: 30),
+                  // Row with UserDetails
+                  const Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      SizedBox(width: 20),
+                      Icon(
+                        Icons.person,
+                        color: Colors.yellow,
+                        size: 30,
+                      ),
+                      SizedBox(width: 10),
+                      Text(
+                        'UserDetails',
+                        style: TextStyle(color: Colors.white, fontSize: 20),
+                      ),
+                    ],
                   ),
-                  const Padding(
-                    padding: EdgeInsets.symmetric(vertical: 10),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: [
-                        SizedBox(width: 20),
-                        Icon(
-                          Icons.history,
-                          color: Colors.yellow,
-                          size: 30,
-                        ),
-                        SizedBox(width: 10),
-                        Text(
-                          'History',
-                          style: TextStyle(color: Colors.white, fontSize: 25),
-                        ),
-                      ],
-                    ),
+                  const SizedBox(height: 10),
+                  const Divider(color: Colors.white), // Horizontal line
+                  const SizedBox(height: 10),
+                  // Row with History
+                  const Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      SizedBox(width: 20),
+                      Icon(
+                        Icons.history,
+                        color: Colors.yellow,
+                        size: 30,
+                      ),
+                      SizedBox(width: 10),
+                      Text(
+                        'History',
+                        style: TextStyle(color: Colors.white, fontSize: 20),
+                      ),
+                    ],
                   ),
-                  const Padding(
-                    padding: EdgeInsets.symmetric(vertical: 10),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: [
-                        SizedBox(width: 20),
-                        Icon(
-                          Icons.book_online,
-                          color: Colors.yellow,
-                          size: 30,
-                        ),
-                        SizedBox(width: 10),
-                        Text(
-                          'Booking Details',
-                          style: TextStyle(color: Colors.white, fontSize: 25),
-                        ),
-                      ],
-                    ),
+                  const SizedBox(height: 10),
+                  const Divider(color: Colors.white), // Horizontal line
+                  const SizedBox(height: 10),
+                  const Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      SizedBox(width: 20),
+                      Icon(
+                        Icons.book_online,
+                        color: Colors.yellow,
+                        size: 30,
+                      ),
+                      SizedBox(width: 10),
+                      Text(
+                        'Booking Details',
+                        style: TextStyle(color: Colors.white, fontSize: 20),
+                      ),
+                    ],
                   ),
-                  const Padding(
-                    padding: EdgeInsets.symmetric(vertical: 10),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: [
-                        SizedBox(width: 20),
-                        Icon(
-                          Icons.mail,
-                          color: Colors.yellow,
-                          size: 30,
-                        ),
-                        SizedBox(width: 10),
-                        Text(
-                          'Contact Us',
-                          style: TextStyle(color: Colors.white, fontSize: 25),
-                        ),
-                      ],
-                    ),
+                  const SizedBox(height: 10),
+                  const Divider(color: Colors.white), // Horizontal line
+                  const SizedBox(height: 10),
+                  const Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      SizedBox(width: 20),
+                      Icon(
+                        Icons.mail,
+                        color: Colors.yellow,
+                        size: 30,
+                      ),
+                      SizedBox(width: 10),
+                      Text(
+                        'Contact Us',
+                        style: TextStyle(color: Colors.white, fontSize: 20),
+                      ),
+                    ],
                   ),
-                  const Padding(
-                    padding: EdgeInsets.symmetric(vertical: 10),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: [
-                        SizedBox(width: 20),
-                        Icon(
-                          Icons.help,
-                          color: Colors.yellow,
-                          size: 30,
-                        ),
-                        SizedBox(width: 10),
-                        Text(
-                          'Help',
-                          style: TextStyle(color: Colors.white, fontSize: 25),
-                        ),
-                      ],
-                    ),
+                  const SizedBox(height: 10),
+                  const Divider(color: Colors.white), // Horizontal line
+                  const SizedBox(height: 10),
+                  const Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      SizedBox(width: 20),
+                      Icon(
+                        Icons.share,
+                        color: Colors.yellow,
+                        size: 30,
+                      ),
+                      SizedBox(width: 10),
+                      Text(
+                        'Share This App',
+                        style: TextStyle(color: Colors.white, fontSize: 20),
+                      ),
+                    ],
                   ),
+                  const SizedBox(height: 10),
+                  const Divider(color: Colors.white), // Horizontal line
+                  const SizedBox(height: 10),
+                  const Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      SizedBox(width: 20),
+                      Icon(
+                        Icons.help,
+                        color: Colors.yellow,
+                        size: 30,
+                      ),
+                      SizedBox(width: 10),
+                      Text(
+                        'Help',
+                        style: TextStyle(color: Colors.white, fontSize: 20),
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 10),
+                  const Divider(color: Colors.white), // Horizontal line
+                  const SizedBox(height: 10),
                 ],
               ),
             ),
