@@ -158,9 +158,6 @@ class MyApp extends StatelessWidget {
                       ),
                     ],
                   ),
-                  const SizedBox(height: 10),
-                  const Divider(color: Colors.white), // Horizontal line
-                  const SizedBox(height: 10),
                 ],
               ),
             ),
