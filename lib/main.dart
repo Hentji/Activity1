@@ -27,11 +27,10 @@ class MyApp extends StatelessWidget {
                       height: 200,
                       color: Colors.white,
                       child: Image.asset(
-                        'images/myImage.png', // Replace 'your_image.png' with your actual image asset path
+                        'images/myImage.png',
                         width: 180,
                         height: 180,
-                        fit: BoxFit
-                            .cover, // Adjust how the image fits into the circular container
+                        fit: BoxFit.cover,
                       ),
                     ),
                   ),
@@ -45,110 +44,101 @@ class MyApp extends StatelessWidget {
                     style: TextStyle(color: Colors.white, fontSize: 20),
                   ),
                   const SizedBox(height: 50),
-                  const Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      SizedBox(width: 20),
-                      Icon(
-                        Icons.person,
-                        color: Colors.yellow,
-                        size: 30,
-                      ),
-                      SizedBox(width: 10),
-                      Text(
-                        'UserDetails',
-                        style: TextStyle(color: Colors.white, fontSize: 20),
-                      ),
-                    ],
+                  // Add Padding with space between rows
+                  const Padding(
+                    padding: EdgeInsets.symmetric(vertical: 10),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        SizedBox(width: 20),
+                        Icon(
+                          Icons.person,
+                          color: Colors.yellow,
+                          size: 30,
+                        ),
+                        SizedBox(width: 10),
+                        Text(
+                          'UserDetails',
+                          style: TextStyle(color: Colors.white, fontSize: 25),
+                        ),
+                      ],
+                    ),
                   ),
-                  const Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      SizedBox(width: 20),
-                      Icon(
-                        Icons.history,
-                        color: Colors.yellow,
-                        size: 30,
-                      ),
-                      SizedBox(width: 10),
-                      Text(
-                        'History',
-                        style: TextStyle(color: Colors.white, fontSize: 20),
-                      ),
-                    ],
+                  const Padding(
+                    padding: EdgeInsets.symmetric(vertical: 10),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        SizedBox(width: 20),
+                        Icon(
+                          Icons.history,
+                          color: Colors.yellow,
+                          size: 30,
+                        ),
+                        SizedBox(width: 10),
+                        Text(
+                          'History',
+                          style: TextStyle(color: Colors.white, fontSize: 25),
+                        ),
+                      ],
+                    ),
                   ),
-                  const Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      SizedBox(width: 20), // Adding space before the icon
-                      Icon(
-                        Icons
-                            .book_online, // You can replace this with your user logo
-                        color: Colors.yellow,
-                        size: 30,
-                      ),
-                      SizedBox(
-                          width:
-                              10), // Adding space between the icon and the text
-                      Text(
-                        'Booking Details',
-                        style: TextStyle(color: Colors.white, fontSize: 20),
-                      ),
-                    ],
+                  const Padding(
+                    padding: EdgeInsets.symmetric(vertical: 10),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        SizedBox(width: 20),
+                        Icon(
+                          Icons.book_online,
+                          color: Colors.yellow,
+                          size: 30,
+                        ),
+                        SizedBox(width: 10),
+                        Text(
+                          'Booking Details',
+                          style: TextStyle(color: Colors.white, fontSize: 25),
+                        ),
+                      ],
+                    ),
                   ),
-                  const Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      SizedBox(width: 20), // Adding space before the icon
-                      Icon(
-                        Icons.email, // You can replace this with your user logo
-                        color: Colors.yellow,
-                        size: 30,
-                      ),
-                      SizedBox(
-                          width:
-                              10), // Adding space between the icon and the text
-                      Text(
-                        'Contact Us',
-                        style: TextStyle(color: Colors.white, fontSize: 20),
-                      ),
-                    ],
+                  const Padding(
+                    padding: EdgeInsets.symmetric(vertical: 10),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        SizedBox(width: 20),
+                        Icon(
+                          Icons.mail,
+                          color: Colors.yellow,
+                          size: 30,
+                        ),
+                        SizedBox(width: 10),
+                        Text(
+                          'Contact Us',
+                          style: TextStyle(color: Colors.white, fontSize: 25),
+                        ),
+                      ],
+                    ),
                   ),
-                  const Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      SizedBox(width: 20), // Adding space before the icon
-                      Icon(
-                        Icons.share, // You can replace this with your user logo
-                        color: Colors.yellow,
-                        size: 30,
-                      ),
-                      SizedBox(
-                          width:
-                              10), // Adding space between the icon and the text
-                      Text(
-                        'Share this app',
-                        style: TextStyle(color: Colors.white, fontSize: 20),
-                      ),
-                    ],
-                  ),
-                  const Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      SizedBox(width: 20), // Adding space before the icon
-                      Icon(
-                        Icons.help, // You can replace this with your user logo
-                        color: Colors.yellow,
-                        size: 30,
-                      ),
-                      SizedBox(
-                          width:
-                              10), // Adding space between the icon and the text
-                      Text(
-                        'Help',
-                        style: TextStyle(color: Colors.white, fontSize: 20),
-                      ),
-                    ],
+                  const Padding(
+                    padding: EdgeInsets.symmetric(vertical: 10),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        SizedBox(width: 20),
+                        Icon(
+                          Icons.help,
+                          color: Colors.yellow,
+                          size: 30,
+                        ),
+                        SizedBox(width: 10),
+                        Text(
+                          'Help',
+                          style: TextStyle(color: Colors.white, fontSize: 25),
+                        ),
+                      ],
+                    ),
                   ),
                 ],
               ),
