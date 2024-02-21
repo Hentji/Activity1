@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
               255, 28, 32, 56), // Set the background color here
           child: Center(
             child: Padding(
-              padding: const EdgeInsets.only(top: 70.0), // Adjust top padding
+              padding: const EdgeInsets.only(top: 40.0), // Adjust top padding
               child: Column(
                 mainAxisAlignment:
                     MainAxisAlignment.start, // Align children to the top
@@ -38,7 +38,12 @@ class MyApp extends StatelessWidget {
                   const SizedBox(height: 20),
                   const Text(
                     'Chris Montgomery',
-                    style: TextStyle(color: Colors.yellow, fontSize: 30),
+                    style: TextStyle(
+                      color: Colors.yellow,
+                      fontSize: 30,
+                      fontWeight: FontWeight
+                          .bold, // Add this line to make the text bold
+                    ),
                   ),
                   const Text(
                     'Secrettt',
@@ -154,6 +159,19 @@ class MyApp extends StatelessWidget {
                       SizedBox(width: 10),
                       Text(
                         'Help',
+                        style: TextStyle(color: Colors.white, fontSize: 20),
+                      ),
+                    ],
+                  ),
+                  const Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      SizedBox(
+                        width: 20,
+                        height: 20,
+                      ),
+                      Text(
+                        'Sign Out',
                         style: TextStyle(color: Colors.white, fontSize: 20),
                       ),
                     ],
