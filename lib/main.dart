@@ -168,7 +168,7 @@ class MyApp extends StatelessWidget {
                     children: [
                       SizedBox(
                         width: 20,
-                        height: 20,
+                        height: 100,
                       ),
                       Text(
                         'Sign Out',
